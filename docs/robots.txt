@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# PeasyCSS Embed Widget
+# Main site: https://peasycss.com
+# Widget docs: https://widget.peasycss.com
+# npm: https://www.npmjs.com/package/peasy-css-embed

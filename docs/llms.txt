@@ -1,21 +1,55 @@
 # PeasyCSS Embed Widget
 
-> Embeddable PeasyCSS widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> File conversion tools. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/peasy-css-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/peasy-css-embed@1/dist/embed.min.js"></script>
+<div data-peasycss="preview" data-slug="example"></div>
+```
+
+## Available Widget Types (11)
+
+- format: `data-peasycss="format"`
+- tool: `data-peasycss="tool"`
+- convert: `data-peasycss="convert"`
+- compare: `data-peasycss="compare"`
+- glossary: `data-peasycss="glossary"`
+- gallery: `data-peasycss="gallery"`
+- guide: `data-peasycss="guide"`
+- search: `data-peasycss="search"`
+- preview (interactive): `data-peasycss="preview"`
+- minify (interactive): `data-peasycss="minify"`
+- color (interactive): `data-peasycss="color"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-peasycss="preview" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/peasy-css-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://peasycss.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://peasycss.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://peasycss.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://peasycss.com
 - Widget docs: https://widget.peasycss.com
-- npm: https://www.npmjs.com/package/peasy-css-embed
-- GitHub: https://github.com/peasytools/peasy-css-embed
-- API: https://peasycss.com/developers/
+- API documentation: https://peasycss.com/developers/
+- npm package: https://www.npmjs.com/package/peasy-css-embed
+- GitHub: https://github.com/fyipedia/peasy-css-embed
 
-## Peasy Tools Widget Family
+## Peasy Tools Widget Network
 
 - [PeasyTools Widget](https://widget.peasytools.com)
 - [PeasyPDF Widget](https://widget.peasypdf.com)
